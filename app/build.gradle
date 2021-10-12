@@ -6,6 +6,9 @@ plugins {
 dependencies {
 
     implementation('com.github.unidev-platform:unidev-http-client:0.0.12')
+    implementation('com.github.unidev-platform:unidev-parser:0.0.1')
+
+    implementation('org.apache.commons:commons-lang3:3.12.0')
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
