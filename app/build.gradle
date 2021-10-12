@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+}
+
+
+dependencies {
+
+    implementation('com.github.unidev-platform:unidev-http-client:0.0.12')
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+
+    implementation 'com.google.guava:guava:30.1.1-jre'
+}
+
+application {
+    mainClass = 'com.unidev.parserapp.App'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
